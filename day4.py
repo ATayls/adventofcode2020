@@ -1,6 +1,6 @@
 import re
 
-with open(r"day4_in.txt", "r") as f:
+with open(r"data/day4_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 validkeys = ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]

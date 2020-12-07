@@ -1,4 +1,4 @@
-with open(r'day1_in.txt', 'r') as f:
+with open(r'data/day1_in.txt', 'r') as f:
     input_list = [int(x.strip()) for x in f.readlines()]
 
 

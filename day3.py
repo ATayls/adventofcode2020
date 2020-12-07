@@ -1,4 +1,4 @@
-with open(r"day3_in.txt", "r") as f:
+with open(r"data/day3_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 
