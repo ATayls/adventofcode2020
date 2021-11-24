@@ -2,7 +2,7 @@ import numpy as np
 from scipy.signal import convolve2d
 from math import sqrt
 
-with open(r"data/day11_in.txt", "r") as f:
+with open(r"data/2020/day11_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 def create_grid(puzzle_input):

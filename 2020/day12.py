@@ -1,4 +1,4 @@
-with open(r"data/day12_in.txt", "r") as f:
+with open(r"data/2020/day12_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 def navigate_part1(instructions: list):

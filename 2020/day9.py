@@ -1,6 +1,6 @@
 import copy
 
-with open(r"data/day9_in.txt", "r") as f:
+with open(r"data/2020/day9_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 def get_sums(list_of_ints):

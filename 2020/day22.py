@@ -1,6 +1,6 @@
 from copy import copy
 
-with open(r"data/day22_in.txt", "r") as f:
+with open(r"data/2020/day22_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 

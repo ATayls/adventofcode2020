@@ -1,6 +1,6 @@
 import copy
 
-with open(r"data/day8_in.txt", "r") as f:
+with open(r"data/2020/day8_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 def create_data_structure(puzzle_input):

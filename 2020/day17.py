@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import ndimage
 
-with open(r"data/day17_in.txt", "r") as f:
+with open(r"data/2020/day17_in.txt", "r") as f:
     puzzle_input = [x.strip() for x in f.readlines()]
 
 
