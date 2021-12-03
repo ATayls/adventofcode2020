@@ -30,12 +30,43 @@ def get_data(year: int, day: int):
         (output_dir / title).write_text(data_input)
 
 
+def isfloat(element):
+    try:
+        float(element)
+        assert(str(element) == str(float(element)))
+        return True
+    except (ValueError, AssertionError):
+        return False
+
+
+def isint(element):
+    try:
+        int(element)
+        assert (str(element) == str(int(element)))
+        return True
+    except (ValueError, AssertionError):
+        return False
+
+
+def convertor(element):
+    if isint(element):
+        return int(element)
+    elif isfloat(element):
+        return float(element)
+    else:
+        raise ValueError
+
+
 def load_data(year: int, day: int):
     """ Load input data from path. Get from url if missing"""
     data_path = DATA_DIR.joinpath(str(year), f"day{day}_in.txt")
     if data_path.exists():
         with open(data_path, 'r') as f:
-            input_list = [int(x.strip()) for x in f.readlines()]
+            input_list = [x.strip() for x in f.readlines()]
+        try:
+            input_list = [convertor(x) for x in input_list]
+        except ValueError:
+            pass
     else:
         get_data(year, day)
         input_list = load_data(year, day)
